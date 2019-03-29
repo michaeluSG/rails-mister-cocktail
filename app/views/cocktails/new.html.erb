@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-lg-9">
+      <%= simple_form_for @user do |f| %>
+    <%= f.label :name %>
+    <%= f.input_field :name %>
+
+    <%= f.submit 'Save' %>
+  <% end %>
+    </div>
+    <div class="col-sm-4 col-lg-3">
+      <p>Right column</p>
+    </div>
+  </div>
+</div>
+
+
+<%= link_to "Back", cocktails_path %>
+
